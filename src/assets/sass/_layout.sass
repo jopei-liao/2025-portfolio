@@ -6,8 +6,20 @@ html,body
 	font-family: $base_font
 	overflow-x: hidden
 	scroll-behavior: smooth
-	@include bg("@/assets/images/bg.jpg",contain)
 	background-repeat: repeat
+	position: relative
+	&::after
+		content: ""
+		height: 100vh
+		width: 100vw
+		position: fixed
+		top: 0
+		left: 0
+		@include bg("@/assets/images/bg.jpg",contain)
+		background-repeat: repeat
+		z-index: -1
+	&::-webkit-scrollbar
+		display: none
 	&.lock
 		overflow: hidden
 	
@@ -16,5 +28,6 @@ html,body
 	display: flex
 	flex-direction: column
 	justify-content: center
+	position: relative
 	@include screen(768px)
 		font-size: 4.67vw

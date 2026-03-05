@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { CSSTransition } from "react-transition-group";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
 import Loading from "./components/Loading";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
+	const loadingRef = useRef(null);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -25,16 +27,15 @@ function App() {
 	}, []);
 	return (
 		<>
-			<AnimatePresence>
-				{isLoading && (
-					<motion.div initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.7 }} className="fixed inset-0 bg-white">
-						<Loading />
-					</motion.div>
-				)}
-			</AnimatePresence>
+			<CSSTransition in={isLoading} timeout={1000} classNames="loading-fade" unmountOnExit nodeRef={loadingRef}>
+				<Loading ref={loadingRef} />
+			</CSSTransition>
 			<BrowserRouter>
 				{/* nav bar*/}
 				{!isLoading && <Nav />}
+
+				{/* footer - 保護文字 */}
+				{!isLoading && <Footer />}
 
 				{/* routes change */}
 				<Routes>

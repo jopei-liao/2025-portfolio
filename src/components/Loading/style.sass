@@ -1,6 +1,21 @@
 @use "@/assets/sass/_variable.sass" as *
 @use "@/assets/sass/_mixin.sass" as *
 
+// CSSTransition 淡入淡出（用於 App.jsx 的 loading 外層）
+.loading-fade-enter 
+	opacity: 0
+
+.loading-fade-enter-active 
+	opacity: 1
+	transition: opacity 1000ms ease
+
+.loading-fade-exit 
+	opacity: 1
+
+.loading-fade-exit-active 
+	opacity: 0
+	transition: opacity 1000ms ease
+
 
 @mixin position-center($text-align: center)
 	position: absolute
@@ -20,9 +35,6 @@
 
 .loading
 	background-color: #EDDCC6
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
 	.container
 		.loading-text 
 			@include position-center
