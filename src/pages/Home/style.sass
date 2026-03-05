@@ -2,6 +2,34 @@
 @use "@/assets/sass/_mixin.sass" as *
 
 .home.page
+	height: 100vh
+	padding: 3em 2em
+	box-sizing: border-box
+	@include screen(768px)
+		padding: 2em 1em
 	.container
+		height: 100%
+		max-width: 1200px
+		box-sizing: border-box
+		overflow-x: hidden
+		padding: 2em
+		background-color: #fff
+		border-radius: 2.5em
+		position: relative
+		@include screen(768px)
+			padding: 1em
+		&::before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 2em
+			background-image: linear-gradient(to bottom, #fff , transparent)
+		.scroll-box
+			overflow-y: scroll
+			height: 100%
+			&::-webkit-scrollbar
+				display: none
 		h1
-			font-size: 1em
+			font-size: 5em
