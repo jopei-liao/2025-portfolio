@@ -13,9 +13,10 @@
 
 @layer components {
 	.page-shell {
-		@apply flex justify-center items-center p-[2em_1.5em] md:p-[3em_2em];
+		@apply flex justify-center items-center h-screen-vh py-8 px-6 md:py-14 md:px-12;
 	}
-	.page-container {
-		@apply relative w-full max-w-[1280px] h-full md:p-[2em] box-border bg-white rounded-[2.5em] overflow-x-hidden;
+	.page-container,
+	.lightbox-container {
+		@apply relative w-full max-w-[1280px] h-full box-border bg-white rounded-2xl md:rounded-4xl overflow-x-hidden;
 	}
 }

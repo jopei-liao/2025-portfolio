@@ -5,14 +5,14 @@ const Loading = forwardRef((props, ref) => {
 	return (
 		<div className="loading fixed top-0 left-0 w-full h-screen-vh z-9999" ref={ref}>
 			<div className="container w-full h-full">
-				<div className="loading-text flex items-center justify-center text-[1.5em] font-bold font-[Roboto_Mono]">
-					<span className="m-[0_.25em]">L</span>
-					<span className="m-[0_.25em]">O</span>
-					<span className="m-[0_.25em]">A</span>
-					<span className="m-[0_.25em]">D</span>
-					<span className="m-[0_.25em]">I</span>
-					<span className="m-[0_.25em]">N</span>
-					<span className="m-[0_.25em]">G</span>
+				<div className="loading-text flex items-center justify-center text-3xl font-bold font-[Roboto_Mono]">
+					<span className="mx-2">L</span>
+					<span className="mx-2">O</span>
+					<span className="mx-2">A</span>
+					<span className="mx-2">D</span>
+					<span className="mx-2">I</span>
+					<span className="mx-2">N</span>
+					<span className="mx-2">G</span>
 				</div>
 			</div>
 		</div>

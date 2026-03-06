@@ -2,9 +2,9 @@ import "./style.sass";
 
 const Footer = () => {
 	return (
-		<div className="footer absolute md:right-[2em] right-[1em] md:bottom-[1em] bottom-[0.5em] z-10">
+		<div className="footer absolute right-6 lg:right-8 bottom-2 lg:bottom-4 z-10">
 			<div className="container">
-				<p className="text-[0.6em]">© 2026 Jopei 👋</p>
+				<p className="text-xs">© 2026 Jopei 👋</p>
 			</div>
 		</div>
 	);
