@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@utility scrollbar-hidden {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+@layer utilities {
+	.h-screen-vh {
+		height: calc(var(--vh, 1vh) * 100);
+	}
+}

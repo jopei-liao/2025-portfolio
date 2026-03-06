@@ -16,14 +16,12 @@
 	opacity: 0
 	transition: opacity 1000ms ease
 
-
 @mixin position-center($text-align: center)
 	position: absolute
 	top: 0
 	bottom: 0
 	left: 0
 	right: 0
-	margin: auto
 	text-align: $text-align
 
 @keyframes blur-text 
@@ -31,21 +29,15 @@
 		filter: blur(0)
 	100% 
 		filter: blur(.15em)
-		color: #EDDCC6
-
+		color: $theme_beige
+		
 .loading
-	background-color: #EDDCC6
+	background-color: $theme_beige	
 	.container
 		.loading-text 
 			@include position-center
-			width: 100%
-			height: 5em
 			span 
-				color: #7EACB5
-				font-size: 1.5em
-				font-family: Roboto Mono
-				font-weight: bold
-				margin: 0 .25em
+				color: $theme_blue				
 				@for $i from 0 through 6 
 					&:nth-child(#{calc($i + 1)}) 
 						filter: blur(0px)
