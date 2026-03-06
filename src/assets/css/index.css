@@ -7,8 +7,15 @@
 	}
 }
 
-@layer utilities {
-	.h-screen-vh {
-		height: calc(var(--vh, 1vh) * 100);
+@utility h-screen-vh {
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+@layer components {
+	.page-shell {
+		@apply flex justify-center items-center p-[2em_1.5em] md:p-[3em_2em];
+	}
+	.page-container {
+		@apply relative w-full max-w-[1280px] h-full md:p-[2em] box-border bg-white rounded-[2.5em] overflow-x-hidden;
 	}
 }

@@ -2,20 +2,8 @@
 @use "@/assets/sass/_mixin.sass" as *
 
 div.nav
-	right: 1.5em
-	top: 1.5em
-	@media screen and (max-width: 768px)
-		right: 1em
-		top: 1em
 	.container
 		a
-			color: transparent
-			font-weight: bold
-			display: block
-			width: 2.5em
-			height: 2.5em
-			border-radius: 50%
-			box-shadow: 0 .14em 28em #fbebdb, 0 .1em .1em #ebdfd5
 			&.home			
 				@include bg("@/assets/images/ic-home.svg", 1.5em 1.5em)
 				background-color: $theme_blue
