@@ -22,7 +22,7 @@ const Home = () => {
 						<h3 className="text-lg md:text-2xl text-left lg:text-right">Nice to meet you!</h3>
 						<Scroll />
 					</div>
-					<div className="info-box h-full flex flex-col justify-center align-center py-0 px-4 md:px-6 lg:px-20 font-bold leading-tight">
+					<div className="info-box h-full flex flex-col justify-center align-center pt-50 px-4 md:px-6 lg:px-20 font-bold leading-tight">
 						<h2 className="text-lg md:text-2xl mb-18 text-center">About Me</h2>
 						<p className="mb-25 leading-normal">
 							I am proficient in React and Vue.js, specializing in building high-performance SPAs and immersive interactive experiences. My expertise lies in bridging the divide between
