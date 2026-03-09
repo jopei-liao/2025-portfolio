@@ -17,6 +17,6 @@
 	}
 	.page-container,
 	.lightbox-container {
-		@apply relative w-full max-w-[1280px] h-full box-border bg-white rounded-2xl md:rounded-4xl overflow-x-hidden;
+		@apply relative w-full max-w-[1080px] h-full box-border bg-white rounded-2xl md:rounded-4xl overflow-x-hidden;
 	}
 }

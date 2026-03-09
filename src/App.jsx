@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
+import axios from "axios";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -25,6 +26,16 @@ function App() {
 		let vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty("--vh", `${vh}px`);
 	}, []);
+
+	useEffect(() => {
+		let sheetUrl = "https://script.google.com/macros/s/AKfycbwryCMj88pBrevcG5wHmihKDKeDfjL8oQNPPIXGmvYYCMAzl6_alYqNY-2Gt0zpXtIE6Q/exec";
+		let params = {
+			time: new Date().toLocaleString(),
+		};
+		if (import.meta.env.MODE === "production") {
+			axios.get(sheetUrl, { params });
+		}
+	}, []);
 	return (
 		<>
 			<CSSTransition in={isLoading} timeout={1000} classNames="loading-fade" unmountOnExit nodeRef={loadingRef}>
@@ -32,7 +43,7 @@ function App() {
 			</CSSTransition>
 			<BrowserRouter>
 				{/* nav bar*/}
-				{!isLoading && <Nav />}
+				{/* {!isLoading && <Nav />} */}
 
 				{/* footer - 保護文字 */}
 				{!isLoading && <Footer />}
