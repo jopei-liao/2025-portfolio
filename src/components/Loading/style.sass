@@ -31,13 +31,11 @@
 		filter: blur(.15em)
 		color: $theme_beige
 		
-.loading
-	background-color: $theme_beige	
+.loading	
 	.container
 		.loading-text 
 			@include position-center
-			span 
-				color: $theme_blue				
+			span 			
 				@for $i from 0 through 6 
 					&:nth-child(#{calc($i + 1)}) 
 						filter: blur(0px)
