@@ -1,65 +1,111 @@
 [
 	{
 		"id": 1,
-		"title": "專案 ＡA",
-		"description": "這是詳細介紹 A...",
-		"tech": "React, Tailwind",
-		"tag": ["React", "Tailwind"]
+		"title": "BMW Online Shop",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "A high-performance vehicle reservation platform that digitized the traditional car-buying process. By decoupling the frontend from the legacy backend, I transformed the system into a seamless SPA, allowing users to browse and reserve vehicles entirely online.",
+		"challenge": [
+			{
+				"Architectural Migration": "Transitioned from a monolithic backend-template system to a modern Vue.js architecture, delegating routing control to the frontend for a smoother, native-app-like experience."
+			},
+			{
+				"Dynamic Content Management": "Implemented Vue Router to manage complex navigation states. Instead of reloading the page, the application dynamically injects vehicle data based on user selection, ensuring zero interruption to the user journey."
+			},
+			{
+				"E-commerce & API Integration": "Integrated RESTful APIs for real-time vehicle data retrieval and collaborated with the backend team to deploy secure payment gateway workflows, enabling end-to-end online purchasing."
+			}
+		],
+		"impact": [
+			{ "Optimized Operations": "Streamlined the vehicle reservation workflow, significantly reducing manual administrative tasks for dealership staff" },
+			{
+				"Enhanced Customer Experience": "Digitized the path-to-purchase, providing consumers with a frictionless and intuitive ordering journey, resulting in a 32% increase in online conversion rates."
+			}
+		],
+		"tag": ["Vue", "Vue Router"],
+		"links": {
+			"demo": "https://reserve.bmw.com.tw/",
+			"github": "https://reserve.bmw.com.tw/"
+		}
 	},
 	{
 		"id": 2,
-		"title": "專案 B",
-		"description": "這是詳細介紹 B...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
+		"title": "BMW Premium Selection",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "",
+		"challenge": "Challenge",
+		"impact": "impact",
+		"tech": ["Vue", "SPA"],
+		"links": {
+			"demo": "https://reserve.bmw.com.tw/",
+			"github": ""
+		}
 	},
 	{
 		"id": 3,
-		"title": "專案 C",
-		"description": "這是詳細介紹 C...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
+		"title": "Nijigen Games",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "",
+		"challenge": "Challenge",
+		"impact": "impact",
+		"tech": ["Vue", "SPA"],
+		"links": {
+			"demo": "https://reserve.bmw.com.tw/",
+			"github": ""
+		}
 	},
 	{
 		"id": 4,
-		"title": "專案 D",
-		"description": "這是詳細介紹 D...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
-	},
-	{
-		"id": 5,
-		"title": "專案 E",
-		"description": "這是詳細介紹 E...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
+		"title": "My NB",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "",
+		"challenge": "Challenge",
+		"impact": "impact",
+		"tech": ["Vue", "RESTful API", "SPA"],
+		"demo": "https://reserve.bmw.com.tw/",
+		"github": ""
 	},
 	{
 		"id": 6,
-		"title": "專案 F",
-		"description": "這是詳細介紹 F...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
+		"title": "NB 471",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "",
+		"challenge": "Challenge",
+		"impact": "impact",
+		"tech": ["Vue", "RESTful API", "SPA"],
+		"links": {
+			"demo": "https://reserve.bmw.com.tw/",
+			"github": ""
+		}
 	},
 	{
-		"id": 7,
-		"title": "專案 G",
-		"description": "這是詳細介紹 G...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
-	},
-	{
-		"id": 8,
-		"title": "專案 H",
-		"description": "這是詳細介紹 H...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
-	},
-	{
-		"id": 9,
-		"title": "專案 I",
-		"description": "這是詳細介紹 I...",
-		"tech": "Node.js, Sass",
-		"tag": ["Node.js", "Sass"]
+		"id": 5,
+		"title": "MINI NEXT",
+		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"banner": "https://placehold.co/600x200",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "",
+		"challenge": "Challenge",
+		"impact": "impact",
+		"tech": ["Vue", "SPA"],
+		"links": {
+			"demo": "https://reserve.bmw.com.tw/",
+			"github": ""
+		}
 	}
 ]

@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@theme {
+	--color-bg-color: #fff4ea;
+	--color-font-black: #333333;
+	--color-theme-blue: #7eacb5;
+	--color-theme-beige: #eddcc6;
+	--color-theme-red: #bf4646;
+}
+
 @utility scrollbar-hidden {
 	&::-webkit-scrollbar {
 		display: none;
