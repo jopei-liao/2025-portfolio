@@ -1,18 +1,222 @@
 [
 	{
 		"id": 1,
+		"title": "Lost And Found",
+		"side_project": true,
+		"subtitle": "Bridging social media and web: A cloud-integrated showcase for street-found objects.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer(Personal Project)",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which curates humorous photos of lost objects submitted by users. I developed a dynamic gallery that synchronizes directly with a cloud-based asset folder, providing a seamless bridge between user submissions and web presentation.",
+		"achievements": [
+			{
+				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud as a lightweight CMS, I enabled instant content updates without the need for code redeployment or manual asset management within the repository."
+			},
+			{
+				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+			}
+		],
+		"impact": [
+			{
+				"Zero-Code Maintenance": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
+			},
+			{ "Streamlined Workflow": "Reduced the time-to-publish for new content from a manual development task to a near-instant cloud sync process." }
+		],
+		"tech": ["React", "Vite"],
+		"links": {
+			"demo": "https://jopei-liao.github.io/lostandfound/",
+			"github": "https://github.com/jopei-liao/2025-lostandfound.git"
+		}
+	},
+	{
+		"id": 2,
+		"title": "New Balance NB 471 campaign",
+		"Side_Project": false,
+		"subtitle": "Driving viral growth and 34% coupon conversion through an interactive React-based brand experience.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "Developed a high-engagement marketing landing page within the LINE LIFF framework for New Balance's latest product launch. The platform featured an interactive personality quiz, creative lacing tutorials, event information, and a coupon management system, all integrated with social sharing capabilities to drive viral growth.",
+		"achievements": [
+			{
+				"Centralized Store": "By architecting a centralized store, I ensured that user progress, quiz results, and session data were seamlessly shared across all components, delivering a highly responsive and consistent user journey."
+			},
+			{
+				"Interactive Logic & Performance": "Optimized the branching logic for the gamified quiz and integrated high-quality media content for the tutorials, ensuring smooth transitions and low latency on mobile devices."
+			}
+		],
+		"impact": [
+			{
+				"Viral Social Reach": "Leveraged a Member-Get-Member (MGM) sharing mechanism to generate 5,000+ unique visits and successfully converted 2,300 new followers for the New Balance Official Account."
+			},
+			{
+				"High Conversion Rate": "The interactive experience drove significant commercial value, with a 34% redemption rate for digital coupons earned through the in-app game."
+			}
+		],
+		"tech": ["React", "Vite", "RESTful API"],
+		"links": {
+			"demo": "https://liff.line.me/1655995729-9ggqKnB6",
+			"github": ""
+		}
+	},
+	{
+		"id": 3,
+		"title": "BMW Premium Selection",
+		"Side_Project": false,
+		"subtitle": "Refactoring legacy workflows into a modular, maintainable Vue.js platform.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "This project involved a complete overhaul of a legacy backend template system that was extremely difficult to maintain. I led the transition to a modern SPA architecture, introduced a completely new visual identity, and implemented end-to-end e-commerce functionality.",
+		"achievements": [
+			{
+				"State Management Optimization": "Leveraged Vue.js and Vuex to implement a global singleton pattern for state management. By extracting shared component states into a centralized store, I significantly improved code modularity and long-term maintainability."
+			},
+			{
+				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS (Content Management System). This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
+			},
+			{
+				"Developer Experience & UI/UX": " Decoupled the frontend from the backend to streamline development workflows, while integrating sophisticated motion effects and SPA navigation to deliver a premium, responsive user experience."
+			},
+			{
+				"Self-Service Content Management": "Engineered a backend-driven admin interface that empowered non-technical stakeholders to manage vehicle listings autonomously. This streamlined the operational workflow, significantly reducing human error caused by back-and-forth communication and ensuring real-time data accuracy on the platform."
+			}
+		],
+		"impact": [
+			{
+				"Technical Efficiency": "Reduced API call frequency by 42% through optimized data caching and state logic."
+			},
+			{
+				"Operational Excellence": "Digitized the vehicle purchasing journey, effectively automating dealership workflows and reducing manual administrative overhead."
+			},
+			{
+				"Improved Findability": "The restructured information architecture led to a more intuitive vehicle search experience compared to the legacy version."
+			}
+		],
+		"tech": ["Vue", "Vuex"],
+		"links": {
+			"demo": "https://bps.bmw.com.tw/",
+			"github": ""
+		}
+	},
+	{
+		"id": 4,
+		"title": "New Balance My NB",
+		"Side_Project": false,
+		"subtitle": "Scalable membership architecture: Powering New Balance’s digital loyalty ecosystem.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "Developed a comprehensive membership system for New Balance integrated within the LINE Front-end Framework (LIFF). This platform serves as a centralized hub for consumers to track purchase history, manage profile data, access exclusive rewards, and engage with the latest brand campaigns, delivering a In-app webview development.",
+		"achievements": [
+			{
+				"State-Driven User Experience": "Utilized Vuex for sophisticated global state management. By maintaining a centralized data store, I enabled users to navigate between complex modules—such as reward tracking and profile editing—without page reloads, ensuring a fluid, app-like performance within the LINE interface."
+			},
+			{
+				"LIFF Platform Optimization": "Tailored the frontend architecture to meet the specific constraints and capabilities of the LINE ecosystem, ensuring high compatibility and optimized loading speeds for a diverse mobile user base."
+			}
+		],
+		"impact": [
+			{
+				"Exceptional Member Growth": "The launch of the platform successfully drove a 62% increase in new member bindings for the New Balance Official Account."
+			},
+			{
+				"High Engagement Levels": "Achieved an impressive 84% participation rate in membership tasks among registered users, proving the platform's intuitive UX and high practical value."
+			}
+		],
+		"tech": ["Vue", "Vuex", "RESTful API"],
+		"links": {
+			"demo": "https://liff.line.me/1655995729-8l4PkG0n",
+			"github": ""
+		}
+	},
+	{
+		"id": 5,
+		"title": "Nijigen Games Official Website",
+		"Side_Project": false,
+		"subtitle": "Elevating brand storytelling with SSR and autonomous CMS integration.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "This project involved a complete redesign of the brand’s official site, focusing on immersive visual effects and enhanced content flexibility. I collaborated closely with the backend team to develop and integrate a customized admin interface (CMS). This empowerment allows clients to update site content autonomously, ensuring real-time information accuracy without technical intervention.",
+		"achievements": [
+			{
+				"Collaborative CMS Integration": "Partnered with backend engineers to bridge the data flow between the admin panel and the frontend. This streamlined the update process for news and media, significantly reducing communication overhead and preventing errors caused by manual code changes."
+			},
+			{
+				"SEO optimization architecture": "Server-side rendering (SSR) is implemented through Vike to ensure that static content can be fully indexed by search engines, thereby achieving a balance between advanced animation and powerful SEO performance."
+			}
+		],
+		"impact": [
+			{
+				"Operational Agility": "Enabled non-technical stakeholders to manage site updates directly, leading to faster content turnaround and zero reliance on engineering support for routine updates."
+			},
+			{
+				"Increased Retention": "The revamped UI and optimized loading states contributed to a 72% growth in news click-through rates (CTR) and improved average session duration."
+			}
+		],
+		"tech": ["React", "Vite", "Vike"],
+		"links": {
+			"demo": "https://www.nijigengames.com/",
+			"github": ""
+		}
+	},
+	{
+		"id": 6,
+		"title": "MINI NEXT",
+		"Side_Project": false,
+		"subtitle": "A high-performance SPA platform integrating payment solutions.",
+		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
+		"show_pc": [],
+		"show_mo": [],
+		"overview": "This project involved a comprehensive overhaul of the Certified Pre-Owned (CPO) vehicle platform. I led the migration from a legacy architecture to a modern Vue.js SPA, focusing on visual redesign, performance refactoring, and the integration of secure payment services. This digital transformation allows customers to complete vehicle reservations and purchases entirely online, bypassing traditional manual barriers.",
+		"achievements": [
+			{
+				"State-Driven Architecture & Testability": "Implemented a centralized state management system to store cross-component shared data. This strategy not only decoupled the business logic from the UI but also resulted in a cleaner, more testable codebase, significantly reducing long-term maintenance costs."
+			},
+			{
+				"Enhanced User Experience (SPA)": "By leveraging SPA principles, I eliminated disruptive page reloads, providing a fluid, high-end browsing experience ."
+			}
+		],
+		"impact": [
+			{
+				"Business Process Digitalization": "Successfully lowered the barrier to entry for vehicle purchasing by digitizing the sales funnel, transforming a manual-heavy process into a seamless online experience."
+			},
+			{
+				"Operational Efficiency": "Collaborated with the backend team to deploy an integrated admin system that records and manages every transaction. This automation has dramatically increased operational efficiency for dealerships and improved data accuracy."
+			}
+		],
+		"tech": ["Vue", "Vuex"],
+		"links": {
+			"demo": "https://main-tw.mini.com.tw/mini_next/",
+			"github": ""
+		}
+	},
+	{
+		"id": 7,
 		"title": "BMW Online Shop",
+		"Side_Project": false,
 		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
 		"banner": "https://placehold.co/600x200",
+		"role": "Lead Frontend Engineer",
 		"show_pc": [],
 		"show_mo": [],
 		"overview": "A high-performance vehicle reservation platform that digitized the traditional car-buying process. By decoupling the frontend from the legacy backend, I transformed the system into a seamless SPA, allowing users to browse and reserve vehicles entirely online.",
-		"challenge": [
+		"achievements": [
 			{
-				"Architectural Migration": "Transitioned from a monolithic backend-template system to a modern Vue.js architecture, delegating routing control to the frontend for a smoother, native-app-like experience."
+				"Architectural Migration": "Transitioned to a modern Vue.js architecture, delegating routing control to the frontend for a smoother, native-app-like experience."
 			},
 			{
 				"Dynamic Content Management": "Implemented Vue Router to manage complex navigation states. Instead of reloading the page, the application dynamically injects vehicle data based on user selection, ensuring zero interruption to the user journey."
+			},
+			{
+				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS (Content Management System). This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
 			},
 			{
 				"E-commerce & API Integration": "Integrated RESTful APIs for real-time vehicle data retrieval and collaborated with the backend team to deploy secure payment gateway workflows, enabling end-to-end online purchasing."
@@ -24,87 +228,9 @@
 				"Enhanced Customer Experience": "Digitized the path-to-purchase, providing consumers with a frictionless and intuitive ordering journey, resulting in a 32% increase in online conversion rates."
 			}
 		],
-		"tag": ["Vue", "Vue Router"],
+		"tech": ["Vue"],
 		"links": {
-			"demo": "https://reserve.bmw.com.tw/",
-			"github": "https://reserve.bmw.com.tw/"
-		}
-	},
-	{
-		"id": 2,
-		"title": "BMW Premium Selection",
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
-		"show_pc": [],
-		"show_mo": [],
-		"overview": "",
-		"challenge": "Challenge",
-		"impact": "impact",
-		"tech": ["Vue", "SPA"],
-		"links": {
-			"demo": "https://reserve.bmw.com.tw/",
-			"github": ""
-		}
-	},
-	{
-		"id": 3,
-		"title": "Nijigen Games",
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
-		"show_pc": [],
-		"show_mo": [],
-		"overview": "",
-		"challenge": "Challenge",
-		"impact": "impact",
-		"tech": ["Vue", "SPA"],
-		"links": {
-			"demo": "https://reserve.bmw.com.tw/",
-			"github": ""
-		}
-	},
-	{
-		"id": 4,
-		"title": "My NB",
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
-		"show_pc": [],
-		"show_mo": [],
-		"overview": "",
-		"challenge": "Challenge",
-		"impact": "impact",
-		"tech": ["Vue", "RESTful API", "SPA"],
-		"demo": "https://reserve.bmw.com.tw/",
-		"github": ""
-	},
-	{
-		"id": 6,
-		"title": "NB 471",
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
-		"show_pc": [],
-		"show_mo": [],
-		"overview": "",
-		"challenge": "Challenge",
-		"impact": "impact",
-		"tech": ["Vue", "RESTful API", "SPA"],
-		"links": {
-			"demo": "https://reserve.bmw.com.tw/",
-			"github": ""
-		}
-	},
-	{
-		"id": 5,
-		"title": "MINI NEXT",
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
-		"show_pc": [],
-		"show_mo": [],
-		"overview": "",
-		"challenge": "Challenge",
-		"impact": "impact",
-		"tech": ["Vue", "SPA"],
-		"links": {
-			"demo": "https://reserve.bmw.com.tw/",
+			"demo": "https://reserve.bmw.com.tw/all-models/",
 			"github": ""
 		}
 	}
