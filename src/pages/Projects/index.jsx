@@ -82,7 +82,7 @@ const Projects = () => {
 									</div>
 								</button>
 							</div>
-							<div className="scroll-box h-[90%] pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
+							<div className="scroll-box h-full pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
 								{selectedProject.show_pc !== "" && (
 									<div className="pic mb-8">
 										<img src={`../assets/images/projects/${selectedProject.show_pc}`} />
