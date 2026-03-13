@@ -32,7 +32,7 @@ const Projects = () => {
 		<div className="projects page page-shell">
 			<div className="page-container pt-10 md:pt-13">
 				<h1 className="absolute left-0 top-10 md:top-13 w-full text-2xl md:text-4xl text-theme-red font-bold px-7 md:px-10 bg-white z-10 pointer-events-none">Projects</h1>
-				<div className="scroll-box h-[90%] px-6 pb-14 pt-15 md:pt-20 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
+				<div className="scroll-box h-[100%] px-6 pb-14 pt-15 md:pt-20 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
 					<div className="projects-list grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
 						{/* project list */}
 						{projectsData.map(project => (
@@ -83,11 +83,13 @@ const Projects = () => {
 								</button>
 							</div>
 							<div className="scroll-box h-[90%] pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
-								<div className="pic mb-8 block">
-									<img src={`../assets/images/projects/${selectedProject.show_pc}`} />
-								</div>
+								{selectedProject.show_pc !== "" && (
+									<div className="pic mb-8">
+										<img src={`../assets/images/projects/${selectedProject.show_pc}`} />
+									</div>
+								)}
 								{selectedProject.show_mo !== "" && (
-									<div className="pic mb-8 block">
+									<div className="pic mb-8">
 										<img src={`../assets/images/projects/${selectedProject.show_mo}`} />
 									</div>
 								)}

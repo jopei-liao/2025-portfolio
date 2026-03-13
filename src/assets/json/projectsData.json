@@ -4,10 +4,10 @@
 		"title": "Lost And Found",
 		"side_project": true,
 		"subtitle": "Bridging social media and web: A cloud-integrated showcase for street-found objects.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-lostandfound.png",
 		"role": "Lead Frontend Engineer(Personal Project)",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "web-lostandfound-pc.png",
+		"show_mo": "",
 		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which curates humorous photos of lost objects submitted by users. I developed a dynamic gallery that synchronizes directly with a cloud-based asset folder, providing a seamless bridge between user submissions and web presentation.",
 		"achievements": [
 			{
@@ -34,10 +34,10 @@
 		"title": "New Balance NB 471 campaign",
 		"Side_Project": false,
 		"subtitle": "Driving viral growth and 34% coupon conversion through an interactive React-based brand experience.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-nb471.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "",
+		"show_mo": "web-nb471-mo.png",
 		"overview": "Developed a high-engagement marketing landing page within the LINE LIFF framework for New Balance's latest product launch. The platform featured an interactive personality quiz, creative lacing tutorials, event information, and a coupon management system, all integrated with social sharing capabilities to drive viral growth.",
 		"achievements": [
 			{
@@ -66,10 +66,10 @@
 		"title": "BMW Premium Selection",
 		"Side_Project": false,
 		"subtitle": "Refactoring legacy workflows into a modular, maintainable Vue.js platform.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-bps.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "web-bps-pc.png",
+		"show_mo": "web-bps-mo.png",
 		"overview": "This project involved a complete overhaul of a legacy backend template system that was extremely difficult to maintain. I led the transition to a modern SPA architecture, introduced a completely new visual identity, and implemented end-to-end e-commerce functionality.",
 		"achievements": [
 			{
@@ -104,13 +104,13 @@
 	},
 	{
 		"id": 4,
-		"title": "New Balance My NB",
+		"title": "New Balance My NB Membership",
 		"Side_Project": false,
 		"subtitle": "Scalable membership architecture: Powering New Balance’s digital loyalty ecosystem.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-mynb.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "",
+		"show_mo": "web-nbcrm-mo.png",
 		"overview": "Developed a comprehensive membership system for New Balance integrated within the LINE Front-end Framework (LIFF). This platform serves as a centralized hub for consumers to track purchase history, manage profile data, access exclusive rewards, and engage with the latest brand campaigns, delivering a In-app webview development.",
 		"achievements": [
 			{
@@ -139,10 +139,10 @@
 		"title": "Nijigen Games Official Website",
 		"Side_Project": false,
 		"subtitle": "Elevating brand storytelling with SSR and autonomous CMS integration.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-nijigengame.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "web-nijigengame-pc.png",
+		"show_mo": "web-nijigengame-mo.png",
 		"overview": "This project involved a complete redesign of the brand’s official site, focusing on immersive visual effects and enhanced content flexibility. I collaborated closely with the backend team to develop and integrate a customized admin interface (CMS). This empowerment allows clients to update site content autonomously, ensuring real-time information accuracy without technical intervention.",
 		"achievements": [
 			{
@@ -171,10 +171,10 @@
 		"title": "MINI NEXT",
 		"Side_Project": false,
 		"subtitle": "A high-performance SPA platform integrating payment solutions.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-mininext.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "web-mininext-pc.png",
+		"show_mo": "web-mininext-mo.png",
 		"overview": "This project involved a comprehensive overhaul of the Certified Pre-Owned (CPO) vehicle platform. I led the migration from a legacy architecture to a modern Vue.js SPA, focusing on visual redesign, performance refactoring, and the integration of secure payment services. This digital transformation allows customers to complete vehicle reservations and purchases entirely online, bypassing traditional manual barriers.",
 		"achievements": [
 			{
@@ -203,10 +203,10 @@
 		"title": "BMW Online Shop",
 		"Side_Project": false,
 		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
-		"banner": "https://placehold.co/600x200",
+		"banner": "banner-onlineshop.png",
 		"role": "Lead Frontend Engineer",
-		"show_pc": [],
-		"show_mo": [],
+		"show_pc": "web-onlineshop-pc.png",
+		"show_mo": "web-onlineshop-mo.png",
 		"overview": "A high-performance vehicle reservation platform that digitized the traditional car-buying process. By decoupling the frontend from the legacy backend, I transformed the system into a seamless SPA, allowing users to browse and reserve vehicles entirely online.",
 		"achievements": [
 			{

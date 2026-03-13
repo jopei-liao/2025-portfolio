@@ -23,13 +23,13 @@ const Home = () => {
 						<h3 className="text-lg md:text-2xl text-left lg:text-right">Nice to meet you!</h3>
 						<Scroll />
 					</div>
-					<div className="info-box h-full flex flex-col justify-center align-center pt-50 px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
-						<h2 className="text-lg md:text-2xl mb-18 text-center">About Me</h2>
+					<div className="info-box flex flex-col justify-center align-center pt-30 px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
+						<h2 className="text-2xl mb-18 text-center">About Me</h2>
 						<p className="mb-25 leading-normal text-center">
 							I am proficient in React and Vue.js, specializing in building high-performance SPAs and immersive interactive experiences. My expertise lies in bridging the divide between
 							complex backend logic and pixel-perfect UI/UX designs, utilizing Figma to ensure seamless integration.
 						</p>
-						<h2 className="text-lg md:text-2xl mb-18 text-center">Tech Stack</h2>
+						<h2 className="text-2xl mb-18 text-center">Tech Stack</h2>
 						<ul className="flex flex-wrap justify-center items-center gap-4">
 							<li className="stack-item">React</li>
 							<li className="stack-item">Redux</li>
@@ -43,8 +43,8 @@ const Home = () => {
 							<li className="stack-item">RESTful API</li>
 						</ul>
 					</div>
-					<div className="social-box h-full flex flex-col justify-center align-center py-0 px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
-						<h2 className="text-lg md:text-2xl mb-18 text-center">Find me on</h2>
+					<div className="social-box h-full  flex flex-col justify-center align-center px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
+						<h2 className="text-2xl mb-18 text-center">Find me on</h2>
 						<ul className="flex flex-col justify-center items-center">
 							<li className="">
 								<a
