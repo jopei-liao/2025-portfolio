@@ -9,13 +9,13 @@ import ic_close from "@/assets/images/ic-close.png";
 
 const Projects = () => {
 	const [projectsData, setProjectsData] = useState([]);
-	const { id } = useParams(); // 抓取網址上的 id
+	const { id } = useParams(); // get id from url
 	const navigate = useNavigate();
 
 	useEffect(() => {
 		const fetchProjects = async () => {
 			try {
-				// 透過 Vite 的資源路徑解析，載入靜態 JSON
+				//get data from json
 				const url = new URL("../../assets/json/projectsData.json", import.meta.url);
 				const response = await axios.get(url.href);
 				setProjectsData(response.data);
@@ -26,20 +26,23 @@ const Projects = () => {
 
 		fetchProjects();
 	}, []);
-
 	const selectedProject = projectsData.find(p => p.id === parseInt(id));
 
 	return (
 		<div className="projects page page-shell">
-			<div className="page-container pt-13">
-				<h1 className="relative text-2xl md:text-4xl text-theme-red font-bold px-7 pb-2 md:px-10">Projects</h1>
-				<div className="scroll-box h-[90%] px-6 pb-14 pt-10 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
-					<div className="projects-list grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+			<div className="page-container pt-10 md:pt-13">
+				<h1 className="absolute left-0 top-10 md:top-13 w-full text-2xl md:text-4xl text-theme-red font-bold px-7 md:px-10 bg-white z-10 pointer-events-none">Projects</h1>
+				<div className="scroll-box h-[90%] px-6 pb-14 pt-15 md:pt-20 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
+					<div className="projects-list grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
 						{/* project list */}
 						{projectsData.map(project => (
-							<div key={project.id} className="item relative w-full min-h-[300px] box-border rounded-sm shadow-xl overflow-hidden" onClick={() => navigate(`/projects/${project.id}`)}>
+							<div
+								key={project.id}
+								className="item relative w-full min-h-[300px] box-border rounded-xl shadow-xl overflow-hidden cursor-pointer md:hover:-translate-y-1 md:hover:duration-150 duration-150 "
+								onClick={() => navigate(`/projects/${project.id}`)}
+							>
 								<div className="banner">
-									<img src={project.banner} />
+									<img src={`../assets/images/projects/${project.banner}`} />
 								</div>
 								<div className="txt-box p-5 pb-20 relative">
 									{project.side_project && <h3 className="text-sm text-white px-2.5 py-1 absolute top-0 -translate-y-full right-0 z-1 bg-theme-blue">Side Project</h3>}
@@ -68,16 +71,27 @@ const Projects = () => {
 				{selectedProject && (
 					<div className="project-box fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-999">
 						<div className="relative lightbox-container w-[89%] xl:w-full h-[90%] pt-13 pb-12 px-6 md:pt-13 md:px-13">
-							<div className="title-box flex justify-between absolute top-0 left-0 w-full pl-6 pr-5 md:px-12 pt-10">
+							<div className="title-box flex justify-between absolute top-0 left-0 w-full pl-6 pr-5 md:pl-13 md:pr-12 pt-10 bg-white pointer-events-none z-10">
 								<h2 className="text-2xl md:text-3xl text-theme-red font-bold">{selectedProject.title}</h2>
-								<button className="size-10 md:hover:scale-105 md:hover:duration-100 duration-100 cursor-pointer -translate-y-1" onClick={() => navigate("/projects")}>
+								<button
+									className="size-10 md:hover:scale-105 md:hover:duration-100 duration-100 cursor-pointer -translate-y-1 pointer-events-auto"
+									onClick={() => navigate("/projects")}
+								>
 									<div className="img">
 										<img src={ic_close} alt="" />
 									</div>
 								</button>
 							</div>
-							<div className="scroll-box h-[90%] mt-10 pt-10 box-border overflow-y-scroll scrollbar-hidden">
-								<p className="text-sm text-font-black text-justify mb-8 pt-2">{selectedProject.overview}</p>
+							<div className="scroll-box h-[90%] pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
+								<div className="pic mb-8 block">
+									<img src={`../assets/images/projects/${selectedProject.show_pc}`} />
+								</div>
+								{selectedProject.show_mo !== "" && (
+									<div className="pic mb-8 block">
+										<img src={`../assets/images/projects/${selectedProject.show_mo}`} />
+									</div>
+								)}
+								<p className="text-sm text-font-black mb-8 pt-2">{selectedProject.overview}</p>
 								<div className="info-box grid grid-cols-1 gap-5 mb-20 pb-8 text-font-black border-b">
 									<div className="flex gap-4 md:gap-2 items-center">
 										<h3 className="text-sm font-bold w-[40%] md:w-[18%] shrink-0">Role</h3>
