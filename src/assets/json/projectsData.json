@@ -5,13 +5,13 @@
 		"side_project": true,
 		"subtitle": "Bridging social media and web: A cloud-integrated showcase for street-found objects.",
 		"banner": "banner-lostandfound.png",
-		"role": "Lead Frontend Engineer(Personal Project)",
+		"role": "Lead Frontend Engineer (Side Project)",
 		"show_pc": "web-lostandfound-pc.png",
 		"show_mo": "",
-		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which curates humorous photos of lost objects submitted by users. I developed a dynamic gallery that synchronizes directly with a cloud-based asset folder, providing a seamless bridge between user submissions and web presentation.",
+		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
 		"achievements": [
 			{
-				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud as a lightweight CMS, I enabled instant content updates without the need for code redeployment or manual asset management within the repository."
+				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
 			},
 			{
 				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
@@ -38,10 +38,10 @@
 		"role": "Lead Frontend Engineer",
 		"show_pc": "",
 		"show_mo": "web-nb471-mo.png",
-		"overview": "Developed a high-engagement marketing landing page within the LINE LIFF framework for New Balance's latest product launch. The platform featured an interactive personality quiz, creative lacing tutorials, event information, and a coupon management system, all integrated with social sharing capabilities to drive viral growth.",
+		"overview": "Developed a high-engagement marketing campaign site within the LINE Front-end Framework (LIFF) for New Balance's latest product launch. The platform featured an interactive personality quiz, creative lacing tutorials, event information, and a coupon management system, all integrated with social sharing capabilities to drive viral growth.",
 		"achievements": [
 			{
-				"Centralized Store": "By architecting a centralized store, I ensured that user progress, quiz results, and session data were seamlessly shared across all components, delivering a highly responsive and consistent user journey."
+				"Centralized Store": "Leveraging React’s component-based architecture alongside a centralized store, I ensured that user progress, quiz results, and session data were seamlessly shared across all components, achieving a fluid and synchronized user experience."
 			},
 			{
 				"Interactive Logic & Performance": "Optimized the branching logic for the gamified quiz and integrated high-quality media content for the tutorials, ensuring smooth transitions and low latency on mobile devices."
@@ -70,13 +70,13 @@
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-bps-pc.png",
 		"show_mo": "web-bps-mo.png",
-		"overview": "This project involved a complete overhaul of a legacy backend template system that was extremely difficult to maintain. I led the transition to a modern SPA architecture, introduced a completely new visual identity, and implemented end-to-end e-commerce functionality.",
+		"overview": "This project involved a complete overhaul of a legacy backend template system that was extremely inflexible to maintain. I led the transition to a modern SPA architecture, introduced a completely new visual identity, and implemented end-to-end e-commerce functionality.",
 		"achievements": [
 			{
 				"State Management Optimization": "Leveraged Vue.js and Vuex to implement a global singleton pattern for state management. By extracting shared component states into a centralized store, I significantly improved code modularity and long-term maintainability."
 			},
 			{
-				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS (Content Management System). This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
+				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS. This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
 			},
 			{
 				"Developer Experience & UI/UX": " Decoupled the frontend from the backend to streamline development workflows, while integrating sophisticated motion effects and SPA navigation to deliver a premium, responsive user experience."
@@ -111,18 +111,18 @@
 		"role": "Lead Frontend Engineer",
 		"show_pc": "",
 		"show_mo": "web-nbcrm-mo.png",
-		"overview": "Developed a comprehensive membership system for New Balance integrated within the LINE Front-end Framework (LIFF). This platform serves as a centralized hub for consumers to track purchase history, manage profile data, access exclusive rewards, and engage with the latest brand campaigns, delivering a In-app webview development.",
+		"overview": "Developed a comprehensive membership system for New Balance integrated within the LINE Front-end Framework (LIFF) . This platform serves as a centralized hub for consumers to track purchase history, manage profile data, access exclusive rewards, and engage with the latest brand campaigns, delivering a In-app webview development.",
 		"achievements": [
 			{
-				"State-Driven User Experience": "Utilized Vuex for sophisticated global state management. By maintaining a centralized data store, I enabled users to navigate between complex modules—such as reward tracking and profile editing—without page reloads, ensuring a fluid, app-like performance within the LINE interface."
+				"LIFF Platform Optimization": "Tailored the frontend architecture to meet the specific constraints and capabilities of the LINE ecosystem, ensuring high compatibility and optimized loading speeds for a diverse mobile user base."
 			},
 			{
-				"LIFF Platform Optimization": "Tailored the frontend architecture to meet the specific constraints and capabilities of the LINE ecosystem, ensuring high compatibility and optimized loading speeds for a diverse mobile user base."
+				"State-Driven User Experience": "Utilized Vuex for sophisticated global state management. By maintaining a centralized data store, I enabled users to navigate between complex modules—such as reward tracking and profile editing—without page reloads, ensuring a fluid, app-like performance within the LINE interface."
 			}
 		],
 		"impact": [
 			{
-				"Exceptional Member Growth": "The launch of the platform successfully drove a 62% increase in new member bindings for the New Balance Official Account."
+				"Exceptional Member Growth": "The launch of the platform successfully drove a 62% increase in new member bindings for the New Balance Line Official Account."
 			},
 			{
 				"High Engagement Levels": "Achieved an impressive 84% participation rate in membership tasks among registered users, proving the platform's intuitive UX and high practical value."
@@ -138,18 +138,18 @@
 		"id": 5,
 		"title": "Nijigen Games Official Website",
 		"Side_Project": false,
-		"subtitle": "Elevating brand storytelling with SSR and autonomous CMS integration.",
+		"subtitle": "Redesign with SSR and autonomous CMS integration.",
 		"banner": "banner-nijigengame.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-nijigengame-pc.png",
 		"show_mo": "web-nijigengame-mo.png",
-		"overview": "This project involved a complete redesign of the brand’s official site, focusing on immersive visual effects and enhanced content flexibility. I collaborated closely with the backend team to develop and integrate a customized admin interface (CMS). This empowerment allows clients to update site content autonomously, ensuring real-time information accuracy without technical intervention.",
+		"overview": "This project involved a complete redesign of the brand’s official site, focusing on immersive visual effects and enhanced content flexibility. I collaborated closely with the backend team to develop and integrate a CMS. This empowerment allows clients to update site content autonomously, ensuring real-time information accuracy without technical intervention.",
 		"achievements": [
 			{
 				"Collaborative CMS Integration": "Partnered with backend engineers to bridge the data flow between the admin panel and the frontend. This streamlined the update process for news and media, significantly reducing communication overhead and preventing errors caused by manual code changes."
 			},
 			{
-				"SEO optimization architecture": "Server-side rendering (SSR) is implemented through Vike to ensure that static content can be fully indexed by search engines, thereby achieving a balance between advanced animation and powerful SEO performance."
+				"SEO optimization architecture": "Server-side rendering is implemented through Vike to ensure that static content can be fully indexed by search engines, thereby achieving a balance between advanced animation and powerful SEO performance."
 			}
 		],
 		"impact": [
@@ -170,18 +170,18 @@
 		"id": 6,
 		"title": "MINI NEXT",
 		"Side_Project": false,
-		"subtitle": "A high-performance SPA platform integrating payment solutions.",
+		"subtitle": "Redesign a high-performance SPA platform integrating payment solutions.",
 		"banner": "banner-mininext.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-mininext-pc.png",
 		"show_mo": "web-mininext-mo.png",
-		"overview": "This project involved a comprehensive overhaul of the Certified Pre-Owned (CPO) vehicle platform. I led the migration from a legacy architecture to a modern Vue.js SPA, focusing on visual redesign, performance refactoring, and the integration of secure payment services. This digital transformation allows customers to complete vehicle reservations and purchases entirely online, bypassing traditional manual barriers.",
+		"overview": "This project involved a comprehensive overhaul of the Certified Pre-Owned (CPO) vehicle platform. I led the migration from a legacy architecture to a modern Vue.js SPA, focusing on visual redesign, performance refactoring, and the integration of secure payment services. This digital transformation allows customers to complete vehicle reservations and purchases entirely online, by passing traditional manual barriers.",
 		"achievements": [
 			{
-				"State-Driven Architecture & Testability": "Implemented a centralized state management system to store cross-component shared data. This strategy not only decoupled the business logic from the UI but also resulted in a cleaner, more testable codebase, significantly reducing long-term maintenance costs."
+				"State-Driven Architecture & Testability": "Implemented by React centralized state management system to store cross-component shared data. This strategy not only decoupled the business logic from the UI but also resulted in a cleaner, more testable codebase, significantly reducing long-term maintenance costs."
 			},
 			{
-				"Enhanced User Experience (SPA)": "By leveraging SPA principles, I eliminated disruptive page reloads, providing a fluid, high-end browsing experience ."
+				"Enhanced User Experience ": "By leveraging SPA principles, I eliminated disruptive page reloads, providing a fluid, high-end browsing experience ."
 			}
 		],
 		"impact": [
@@ -189,7 +189,7 @@
 				"Business Process Digitalization": "Successfully lowered the barrier to entry for vehicle purchasing by digitizing the sales funnel, transforming a manual-heavy process into a seamless online experience."
 			},
 			{
-				"Operational Efficiency": "Collaborated with the backend team to deploy an integrated admin system that records and manages every transaction. This automation has dramatically increased operational efficiency for dealerships and improved data accuracy."
+				"Operational Efficiency": "We deployed an integrated management system in collaboration with the back-end team to record and manage every transaction. This automation significantly improved the dealer's operational efficiency by 68% and increased data accuracy."
 			}
 		],
 		"tech": ["Vue", "Vuex"],
@@ -216,7 +216,7 @@
 				"Dynamic Content Management": "Implemented Vue Router to manage complex navigation states. Instead of reloading the page, the application dynamically injects vehicle data based on user selection, ensuring zero interruption to the user journey."
 			},
 			{
-				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS (Content Management System). This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
+				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS. This allowed marketing teams to update vehicle specifications and campaign details independently, eliminating communication bottlenecks and reducing manual code maintenance by technical staff."
 			},
 			{
 				"E-commerce & API Integration": "Integrated RESTful APIs for real-time vehicle data retrieval and collaborated with the backend team to deploy secure payment gateway workflows, enabling end-to-end online purchasing."
