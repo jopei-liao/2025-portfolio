@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./style.sass";
 import Scroll from "../../components/Scroll";
 
@@ -30,7 +32,7 @@ const Home = () => {
 							complex backend logic and pixel-perfect UI/UX designs, utilizing Figma to ensure seamless integration.
 						</p>
 						<h2 className="text-2xl mb-18 text-center">Tech Stack</h2>
-						<ul className="flex flex-wrap justify-center items-center gap-4">
+						<ul className="flex flex-wrap justify-center items-center gap-4 mb-25">
 							<li className="stack-item">React</li>
 							<li className="stack-item">Redux</li>
 							<li className="stack-item">Vue</li>
@@ -42,6 +44,14 @@ const Home = () => {
 							<li className="stack-item">Git</li>
 							<li className="stack-item">RESTful API</li>
 						</ul>
+						<h2 className="text-2xl mb-18 text-center">My Projects</h2>
+						<p className="mb-25 leading-normal text-center">
+							Explore my work
+							<Link className="mx-2 underline font-extrabold" to="/projects">
+								HERE
+							</Link>
+							, or hit that button up there! ↗️
+						</p>
 					</div>
 					<div className="social-box h-full  flex flex-col justify-center align-center px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
 						<h2 className="text-2xl mb-18 text-center">Find me on</h2>
