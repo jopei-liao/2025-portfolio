@@ -25,27 +25,27 @@ const Home = () => {
 						<h3 className="text-lg md:text-2xl text-left lg:text-right">Nice to meet you!</h3>
 						<Scroll />
 					</div>
-					<div className="info-box flex flex-col justify-center align-center pt-30 px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
-						<h2 className="text-2xl mb-18 text-center">About Me</h2>
-						<p className="mb-25 leading-normal text-center">
+					<div className="info-box flex flex-col justify-center align-center pt-30 px-4 md:px-6 lg:px-20 font-bold leading-tight">
+						<h2 className="text-theme-brown text-2xl mb-18 text-center">About Me</h2>
+						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
 							I am proficient in React and Vue.js, specializing in building high-performance SPAs and immersive interactive experiences. My expertise lies in bridging the divide between
 							complex backend logic and pixel-perfect UI/UX designs, utilizing Figma to ensure seamless integration.
 						</p>
-						<h2 className="text-2xl mb-18 text-center">Tech Stack</h2>
-						<ul className="flex flex-wrap justify-center items-center gap-4 mb-25">
-							<li className="stack-item">React</li>
-							<li className="stack-item">Redux</li>
-							<li className="stack-item">Vue</li>
-							<li className="stack-item">Vite</li>
-							<li className="stack-item">JavaScript</li>
-							<li className="stack-item">HTML5</li>
-							<li className="stack-item">CSS3 / SASS</li>
-							<li className="stack-item">TailwindCSS</li>
-							<li className="stack-item">Git</li>
-							<li className="stack-item">RESTful API</li>
+						<h2 className="text-theme-brown text-2xl mb-18 text-center">Tech Stack</h2>
+						<ul className="text-theme-red flex flex-wrap justify-center items-center gap-4 mb-60 md:mb-25 ">
+							<li className="stack-item border rounded-4xl py-3 px-5">React</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">Redux</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">Vue</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">Vite</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">JavaScript</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">HTML5</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">CSS3 / SASS</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">TailwindCSS</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">Git</li>
+							<li className="stack-item border rounded-4xl py-3 px-5">RESTful API</li>
 						</ul>
-						<h2 className="text-2xl mb-18 text-center">My Projects</h2>
-						<p className="mb-25 leading-normal text-center">
+						<h2 className="text-theme-brown  text-2xl mb-18 text-center">My Projects</h2>
+						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
 							Explore my work
 							<Link className="mx-2 underline font-extrabold" to="/projects">
 								HERE
@@ -53,8 +53,8 @@ const Home = () => {
 							, or hit that button up there! ↗️
 						</p>
 					</div>
-					<div className="social-box h-full  flex flex-col justify-center align-center px-4 md:px-6 lg:px-20 text-theme-red font-bold leading-tight">
-						<h2 className="text-2xl mb-18 text-center">Find me on</h2>
+					<div className="social-box h-full  flex flex-col justify-center align-center px-4 md:px-6 lg:px-20 text-theme-brown font-bold leading-tight">
+						<h2 className="text-theme-brown text-2xl mb-18 text-center">Find me on</h2>
 						<ul className="flex flex-col justify-center items-center">
 							<li className="">
 								<a

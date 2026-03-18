@@ -7,6 +7,8 @@
 	--color-theme-blue: #7eacb5;
 	--color-theme-beige: #eddcc6;
 	--color-theme-red: #bf4646;
+	--color-theme-brown: #920a0a;
+	/* --color-theme-brown: #533f0f; */
 }
 
 @utility scrollbar-hidden {
