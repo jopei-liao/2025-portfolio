@@ -32,7 +32,7 @@ const Projects = () => {
 		<div className="projects page page-shell">
 			<div className="page-container pt-10 md:pt-13">
 				<h1 className="absolute left-0 top-10 md:top-13 w-full text-2xl md:text-4xl text-theme-red font-bold px-7 md:px-10 bg-white z-10 pointer-events-none">Projects</h1>
-				<div className="scroll-box h-[100%] px-6 pb-14 pt-15 md:pt-20 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
+				<div className="scroll-box h-full px-6 pb-14 pt-15 md:pt-20 md:px-10 md:pb-18 box-border overflow-y-scroll scrollbar-hidden">
 					<div className="projects-list grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
 						{/* project list */}
 						{projectsData.map(project => (
@@ -69,7 +69,8 @@ const Projects = () => {
 				</div>
 				{/* Lightbox：if URL has id */}
 				{selectedProject && (
-					<div className="project-box fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-999">
+					<div className="project-box fixed inset-0 z-999 flex items-center justify-center">
+						<div className="absolute inset-0 bg-black/50" onClick={() => navigate("/projects")} />
 						<div className="relative lightbox-container w-[89%] xl:w-full h-[90%] pt-13 pb-12 px-6 md:pt-13 md:px-13">
 							<div className="title-box flex justify-between absolute top-0 left-0 w-full pl-6 pr-5 md:pl-13 md:pr-12 pt-10 bg-white pointer-events-none z-10">
 								<h2 className="text-2xl md:text-3xl text-theme-red font-bold">{selectedProject.title}</h2>
