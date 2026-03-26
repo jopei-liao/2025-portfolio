@@ -20,8 +20,10 @@ const Home = () => {
 							<br /> I'm Jopei
 						</h1>
 						<h2 className="text-lg md:text-2xl mb-18 md:leading-10">
-							A curiosity-driven <span className="text-theme-blue">Frontend Engineer</span> <br />
-							with 5 years of expertise in bringing creative visions to life through clean and functional code
+							A curiosity-driven <span className="text-theme-blue">Frontend Engineer </span>
+							with 5 years of expertise.
+							<br />
+							Enjoys turning static ideas into interactive realities.
 						</h2>
 						<h3 className="text-lg md:text-2xl text-left lg:text-right">Nice to meet you!</h3>
 						<Scroll />
@@ -43,6 +45,7 @@ const Home = () => {
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3 / SASS</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Tailwind CSS</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CI/CD</li>
 						</ul>
 						<h2 className="text-theme-brown  text-2xl mb-18 text-center">My Projects</h2>
 						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
