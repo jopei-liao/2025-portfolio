@@ -29,6 +29,6 @@ jobs:
               with:
                   token: ${{ secrets.DEPLOY_TOKEN }} # 使用我們剛設定的 Secret
                   repository-name: jopei-liao/jopei-liao.github.io
-                  branch: main # 你的 Pages 讀取的分支
+                  branch: master # 你的 Pages 讀取的分支
                   folder: dist # Vite/React 預設打包出來的資料夾
                   clean: true # 部署前自動清空目標倉庫舊檔案
