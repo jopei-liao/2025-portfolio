@@ -32,3 +32,5 @@ jobs:
                   branch: master # 你的 Pages 讀取的分支
                   folder: dist # Vite/React 預設打包出來的資料夾
                   clean: true # 部署前自動清空目標倉庫舊檔案
+                  clean-exclude: |
+                      lostandfound/
