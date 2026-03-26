@@ -44,8 +44,8 @@ const Home = () => {
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">HTML5</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3 / SASS</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Tailwind CSS</li>
-							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CI/CD</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git</li>
 						</ul>
 						<h2 className="text-theme-brown  text-2xl mb-18 text-center">My Projects</h2>
 						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
