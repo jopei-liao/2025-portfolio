@@ -35,9 +35,10 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		let sheetUrl = "https://script.google.com/macros/s/AKfycbwryCMj88pBrevcG5wHmihKDKeDfjL8oQNPPIXGmvYYCMAzl6_alYqNY-2Gt0zpXtIE6Q/exec";
+		let sheetUrl = "https://script.google.com/macros/s/AKfycbz7mASCJ6AEq6QtAbEUZg2rkEGNcv6PvaIa6aC9wN77pUlWfgFLPTnjqalgJK9n3shUsA/exec";
 		let params = {
 			time: new Date().toLocaleString(),
+			timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 		};
 		if (import.meta.env.MODE === "production") {
 			axios.get(sheetUrl, { params });

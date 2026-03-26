@@ -19,30 +19,30 @@ const Home = () => {
 							Hi,
 							<br /> I'm Jopei
 						</h1>
-						<h2 className="text-lg md:text-2xl mb-18">
-							A curious <span className="text-theme-blue">Front-end Engineer</span> with 5 years of experience
+						<h2 className="text-lg md:text-2xl mb-18 md:leading-10">
+							A curiosity-driven <span className="text-theme-blue">Frontend Engineer</span> <br />
+							with 5 years of expertise in bringing creative visions to life through clean and functional code
 						</h2>
 						<h3 className="text-lg md:text-2xl text-left lg:text-right">Nice to meet you!</h3>
 						<Scroll />
 					</div>
 					<div className="info-box flex flex-col justify-center align-center pt-30 px-4 md:px-6 lg:px-20 font-bold leading-tight">
 						<h2 className="text-theme-brown text-2xl mb-18 text-center">About Me</h2>
-						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
-							I am proficient in React and Vue.js, specializing in building high-performance SPAs and immersive interactive experiences. My expertise lies in bridging the divide between
+						<p className="text-theme-red md:w-[80%] m-auto mb-60 md:mb-25 leading-normal text-center">
+							I am proficient in React and Vue, specializing in building high-performance SPA and immersive interactive experiences. My expertise lies in bridging the divide between
 							complex backend logic and pixel-perfect UI/UX designs, utilizing Figma to ensure seamless integration.
 						</p>
 						<h2 className="text-theme-brown text-2xl mb-18 text-center">Tech Stack</h2>
-						<ul className="text-theme-red flex flex-wrap justify-center items-center gap-4 mb-60 md:mb-25 ">
-							<li className="stack-item border rounded-4xl py-3 px-5">React</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">Redux</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">Vue</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">Vite</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">JavaScript</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">HTML5</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">CSS3 / SASS</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">TailwindCSS</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">Git</li>
-							<li className="stack-item border rounded-4xl py-3 px-5">RESTful API</li>
+						<ul className="text-theme-red flex flex-wrap justify-center items-center gap-4 md:w-[80%] m-auto mb-60 md:mb-25">
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">React</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vue</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vite</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">JavaScript</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">RESTful API</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">HTML5</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3 / SASS</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Tailwind CSS</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git</li>
 						</ul>
 						<h2 className="text-theme-brown  text-2xl mb-18 text-center">My Projects</h2>
 						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
