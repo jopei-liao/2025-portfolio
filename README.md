@@ -1,5 +1,7 @@
 # Jopei's Portfolio Website
 
+![Deploy Status](https://github.com/jopei-liao/2025-portfolio/actions/workflows/static.yml/badge.svg)
+
 A personal portfolio website designed to showcase my projects, skills, and professional journey. Built with a modern tech stack to ensure performance, responsiveness, and a seamless user experience.
 
 ## 🚀 Tech Stack
