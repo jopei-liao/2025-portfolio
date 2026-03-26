@@ -3,34 +3,34 @@ name: Build and Deploy to GitHub Pages
 on:
     push:
         branches:
-            - main # 當 main 分支有更新時觸發
+            - main
 
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout 程式碼
+            - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: 設定 Node.js
+            - name: Set up Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 20
                   cache: "npm"
 
-            - name: 安裝依賴並打包
+            - name: Install dependencies and build
               run: |
                   npm install
                   npm run build
 
-            - name: 部署到另一個倉庫 (jopei-liao.github.io)
+            - name: Deploy to external repository (jopei-liao.github.io)
               uses: JamesIves/github-pages-deploy-action@v4
               with:
-                  token: ${{ secrets.DEPLOY_TOKEN }} # 使用我們剛設定的 Secret
+                  token: ${{ secrets.DEPLOY_TOKEN }}
                   repository-name: jopei-liao/jopei-liao.github.io
-                  branch: master # 你的 Pages 讀取的分支
-                  folder: dist # Vite/React 預設打包出來的資料夾
-                  clean: true # 部署前自動清空目標倉庫舊檔案
+                  branch: master
+                  folder: dist
+                  clean: true
                   clean-exclude: |
                       lostandfound/
