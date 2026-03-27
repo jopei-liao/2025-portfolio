@@ -35,12 +35,12 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		let sheetUrl = "https://script.google.com/macros/s/AKfycbz7mASCJ6AEq6QtAbEUZg2rkEGNcv6PvaIa6aC9wN77pUlWfgFLPTnjqalgJK9n3shUsA/exec";
+		const sheetUrl = import.meta.env.VITE_GOOGLE_SHEET_API_URL;
 		let params = {
 			time: new Date().toLocaleString(),
 			timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 		};
-		if (import.meta.env.MODE === "production") {
+		if (import.meta.env.MODE === "production" && sheetUrl) {
 			axios.get(sheetUrl, { params });
 		}
 	}, []);
