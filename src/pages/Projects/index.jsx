@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { findProjectById } from "../../tests/utils/projectUtils";
 import projectsData from "../../assets/json/projectsData.json";
 import ProjectLightbox from "../../components/ProjectLightbox";
 
@@ -6,9 +8,18 @@ import "./style.sass";
 import ic_arrow from "@/assets/images/ic-arrow.png";
 
 const Projects = () => {
-	const { id } = useParams(); // get id from url
 	const navigate = useNavigate();
-	const selectedProject = projectsData.find(p => p.id === parseInt(id));
+	const { id } = useParams(); // get id from url
+	const selectedProject = findProjectById(projectsData, id);
+
+	useEffect(() => {
+		// If there is an ID in the URL, but no corresponding project data is found
+		if (id && !selectedProject) {
+			navigate("/projects", { replace: true });
+		}
+	}, [id, selectedProject, navigate]);
+
+	if (id && !selectedProject) return null;
 
 	return (
 		<div className="projects page page-shell">
