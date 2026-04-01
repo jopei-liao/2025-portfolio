@@ -1,4 +1,62 @@
 [
-	{ "id": 1, "title": "project A" },
-	{ "id": 2, "title": "project B" }
+	{
+		"id": 1,
+		"title": "project A",
+		"side_project": true,
+		"subtitle": "project A subtitle",
+		"banner": "banner-lostandfound.png",
+		"role": "Lead Frontend Engineer (Side Project)",
+		"show_pc": "web-lostandfound-pc.png",
+		"show_mo": "",
+		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
+		"achievements": [
+			{
+				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
+			},
+			{
+				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+			}
+		],
+		"impact": [
+			{
+				"Zero-Code Maintenance": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
+			},
+			{ "Streamlined Workflow": "Reduced the time-to-publish for new content from a manual development task to a near-instant cloud sync process." }
+		],
+		"tech": ["React", "Vite"],
+		"links": {
+			"demo": "https://jopei-liao.github.io/lostandfound/",
+			"github": "https://github.com/jopei-liao/2025-lostandfound.git"
+		}
+	},
+	{
+		"id": 2,
+		"title": "project B",
+		"side_project": true,
+		"subtitle": "project B subtitle",
+		"banner": "banner-lostandfound.png",
+		"role": "Lead Frontend Engineer (Side Project)",
+		"show_pc": "web-lostandfound-pc.png",
+		"show_mo": "",
+		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
+		"achievements": [
+			{
+				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
+			},
+			{
+				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+			}
+		],
+		"impact": [
+			{
+				"Zero-Code Maintenance": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
+			},
+			{ "Streamlined Workflow": "Reduced the time-to-publish for new content from a manual development task to a near-instant cloud sync process." }
+		],
+		"tech": ["React", "Vite"],
+		"links": {
+			"demo": "https://jopei-liao.github.io/lostandfound/",
+			"github": "https://github.com/jopei-liao/2025-lostandfound.git"
+		}
+	}
 ]
