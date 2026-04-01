@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 import "./style.sass";
-import Scroll from "../../components/Scroll";
+import Scroll from "@/components/Scroll";
 
-import ic_cv from "../../assets/images/ic-cv.png";
-import ic_linkedin from "../../assets/images/ic-linkedin.png";
-import ic_github from "../../assets/images/ic-github.png";
-import ic_behance from "../../assets/images/ic-behance.png";
-import ic_email from "../../assets/images/ic-email.png";
+import ic_cv from "@/assets/images/ic-cv.png";
+import ic_linkedin from "@/assets/images/ic-linkedin.png";
+import ic_github from "@/assets/images/ic-github.png";
+import ic_behance from "@/assets/images/ic-behance.png";
+import ic_email from "@/assets/images/ic-email.png";
 
 const Home = () => {
 	return (
