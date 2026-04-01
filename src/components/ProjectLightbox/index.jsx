@@ -20,12 +20,12 @@ const ProjectLightbox = ({ project, onClose }) => {
 					<div className="scroll-box h-full pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
 						{project.show_pc !== "" && (
 							<div className="pic mb-8">
-								<img src={`../assets/images/projects/${project.show_pc}`} />
+								<img src={`/assets/images/projects/${project.show_pc}`} />
 							</div>
 						)}
 						{project.show_mo !== "" && (
 							<div className="pic mb-8">
-								<img src={`../assets/images/projects/${project.show_mo}`} />
+								<img src={`/assets/images/projects/${project.show_mo}`} />
 							</div>
 						)}
 						<p className="text-sm text-font-black mb-8 pt-2">{project.overview}</p>

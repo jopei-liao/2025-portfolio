@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { findProjectById } from "../../tests/utils/projectUtils";
-import projectsData from "../../assets/json/projectsData.json";
-import ProjectLightbox from "../../components/ProjectLightbox";
+import { findProjectById } from "@/tests/utils/projectUtils";
+
+import projectsData from "@/assets/json/projectsData.json";
+import ProjectLightbox from "@/components/ProjectLightbox";
 
 import "./style.sass";
 import ic_arrow from "@/assets/images/ic-arrow.png";
@@ -35,7 +36,7 @@ const Projects = () => {
 								onClick={() => navigate(`/projects/${project.id}`)}
 							>
 								<div className="banner">
-									<img src={`../assets/images/projects/${project.banner}`} />
+									<img src={`/assets/images/projects/${project.banner}`} />
 								</div>
 								<div className="txt-box p-5 pb-20 relative">
 									{project.side_project && <h3 className="text-sm text-white px-2.5 py-1 absolute top-0 -translate-y-full right-0 z-1 bg-theme-blue">Side Project</h3>}

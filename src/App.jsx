@@ -3,12 +3,12 @@ import { useEffect, useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import axios from "axios";
 
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Home from "@/pages/Home";
+import Projects from "@/pages/Projects";
 
-import Loading from "./components/Loading";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Loading from "@/components/Loading";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
