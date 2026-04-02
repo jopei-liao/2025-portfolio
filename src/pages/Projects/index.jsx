@@ -1,26 +1,11 @@
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { findProjectById } from "@/tests/utils/projectUtils";
+import { useNavigate, Outlet } from "react-router-dom";
 
 import projectsData from "@/assets/json/projectsData.json";
-import ProjectLightbox from "@/components/ProjectLightbox";
-
 import "./style.sass";
 import ic_arrow from "@/assets/images/ic-arrow.png";
 
 const Projects = () => {
 	const navigate = useNavigate();
-	const { id } = useParams(); // get id from url
-	const selectedProject = findProjectById(projectsData, id);
-
-	useEffect(() => {
-		// If there is an ID in the URL, but no corresponding project data is found
-		if (id && !selectedProject) {
-			navigate("/projects", { replace: true });
-		}
-	}, [id, selectedProject, navigate]);
-
-	if (id && !selectedProject) return null;
 
 	return (
 		<div className="projects page page-shell">
@@ -62,7 +47,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* Lightbox：if URL has id */}
-				{selectedProject && <ProjectLightbox project={selectedProject} onClose={() => navigate("/projects")} />}
+				<Outlet />
 			</div>
 		</div>
 	);

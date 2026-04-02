@@ -9,6 +9,7 @@ import Projects from "@/pages/Projects";
 import Loading from "@/components/Loading";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ProjectLightbox from "@/components/ProjectLightbox";
 
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -59,8 +60,9 @@ function App() {
 				{/* routes change */}
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/projects/:id" element={<Projects />} />
+					<Route path="/projects" element={<Projects />}>
+						<Route path=":id" element={<ProjectLightbox />} />
+					</Route>
 				</Routes>
 			</BrowserRouter>
 		</>

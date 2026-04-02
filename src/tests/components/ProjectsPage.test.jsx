@@ -3,6 +3,7 @@ import { MemoryRouter, Routes, Route } from "react-router-dom";
 
 import viProjectData from "@/tests/mock/projects.json";
 import Projects from "@/pages/Projects";
+import ProjectLightbox from "@/components/ProjectLightbox";
 import { vi } from "vitest";
 
 vi.mock("@/assets/json/projectsData.json", () => {
@@ -17,7 +18,7 @@ describe("Projects page and Lightbox interaction tests", () => {
 				<Routes>
 					{/* Simulate your routing structure */}
 					<Route path="/projects" element={<Projects projectsData={viProjectData} />}>
-						<Route path=":id" element={<Projects projectsData={viProjectData} />} />
+						<Route path=":id" element={<ProjectLightbox projectsData={viProjectData} />} />
 					</Route>
 				</Routes>
 			</MemoryRouter>,
@@ -35,7 +36,7 @@ describe("Projects page and Lightbox interaction tests", () => {
 		const projectCard = screen.getByText("project A");
 		fireEvent.click(projectCard);
 		// 2. Check if the Lightbox pops up (search for text in the Lightbox)
-		const detailText = await screen.findByText("Tech Stack");
+		const detailText = await screen.findByText("project A subtitle");
 		expect(detailText).toBeInTheDocument();
 	});
 
@@ -43,7 +44,7 @@ describe("Projects page and Lightbox interaction tests", () => {
 		// Simulate the user directly entering a specific project link
 		renderWithRouter("/projects/1");
 
-		const detail = screen.getByText("Tech Stack");
+		const detail = screen.getByText("project A subtitle");
 		expect(detail).toBeInTheDocument();
 	});
 });
