@@ -57,16 +57,35 @@ The GitHub Actions script for the main site includes a `clean-exclude` configura
 ## 📂 Project Structure
 
 ```text
-├── .github/workflows/   # CI/CD automation scripts
-├── public/              # Static assets (images, favicon, etc.)
+.
+├── .github/workflows/         # CI/CD automation scripts
+├── public/                    # Static public assets
 ├── src/
-│   ├── components/      # Shared UI components
-│   ├── pages/           # Main page sections
-│   ├── assets/          # Styles and graphics
-│   └── App.jsx          # Main entry point
+│   ├── assets/
+│   │   ├── css/               # Global CSS
+│   │   ├── images/            # Image assets
+│   │   ├── json/              # Static JSON data (e.g. projectsData.json)
+│   │   └── sass/              # Shared SASS variables/mixins/layout
+│   ├── components/            # Reusable UI components
+│   │   ├── Footer/
+│   │   ├── Loading/
+│   │   ├── Nav/
+│   │   ├── ProjectLightbox/
+│   │   └── Scroll/
+│   ├── pages/                 # Route-level pages
+│   │   ├── Home/
+│   │   └── Projects/
+│   ├── tests/                 # Unit/component tests and test setup
+│   │   ├── components/
+│   │   ├── mock/
+│   │   ├── utils/
+│   │   └── setup.js
+│   ├── App.jsx                # Root app component
+│   └── main.jsx               # App bootstrap entry
 ├── index.html
-└── vite.config.js       # Vite configuration (including deployment path settings)
-```
+├── eslint.config.js
+├── package.json
+└── vite.config.js             # Vite configuration (deployment path, build options)
 
 ---
 
@@ -83,3 +102,4 @@ This project is licensed under the ![License: MIT](https://img.shields.io/badge/
 - GitHub: [jopei-liao](https://github.com/jopei-liao)
 - Email: [jopei.liao@gmaiol.com](jopei.liao@gmaiol.com)
 - Portfolio: [jopei-liao.github.io](https://jopei-liao.github.io/)
+```
