@@ -33,7 +33,7 @@
 		"id": 2,
 		"title": "New Balance NB 471 campaign",
 		"Side_Project": false,
-		"subtitle": "Driving viral growth and 34% coupon conversion through an interactive React-based brand experience.",
+		"subtitle": "Accelerated user growth and achieved a 34% coupon conversion rate through an interactive React-based brand experience.",
 		"banner": "banner-nb471.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "",
@@ -82,12 +82,12 @@
 				"Developer Experience & UI/UX": "Decoupled the frontend from the backend to streamline development workflows, while integrating sophisticated motion effects and SPA navigation with Vue Router to deliver a premium, responsive user experience and ensuring real-time data accuracy on the platform."
 			},
 			{
-				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS."
+				"Dynamic Content Integration": "Collaborated with the backend team to implement a customized CMS that empower non-technical teams with autonomous content updates, reducing operational overhead"
 			}
 		],
 		"impact": [
 			{
-				"Technical Efficiency": "Reduced API call frequency by 42% through optimized data caching and state logic."
+				"Technical Efficiency": "Cut API call frequency by 42% vs. legacy implementation via optimized data caching and state logic."
 			},
 			{
 				"Operational Excellence": "Digitized the vehicle purchasing journey, effectively automating dealership workflows and reducing manual administrative overhead."
@@ -141,18 +141,18 @@
 		"id": 5,
 		"title": "Nijigen Games Official Website",
 		"Side_Project": false,
-		"subtitle": "Redesign with SSR and autonomous CMS integration.",
+		"subtitle": "Redesigned the official website using React with SSR and autonomous CMS integration.",
 		"banner": "banner-nijigengame.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-nijigengame-pc.png",
 		"show_mo": "web-nijigengame-mo.png",
-		"overview": "I led the transformation of a landing page into a comprehensive  SPA, architecting a new structure that includes a dedicated Home, News List, and Article Detail pages. This redesign focused on immersive visual effects and enhanced content flexibility, while collaborating with the backend team to integrate a custom CMS that empowers clients to manage real-time updates autonomously.",
+		"overview": "I led the transformation of a official website into a comprehensive SPA, architecting a new structure that includes a dedicated Home, News List, and Article Detail pages. This redesign focused on immersive visual effects and enhanced content flexibility, while collaborating with the backend team to integrate a custom CMS that empowers clients to manage real-time updates autonomously.",
 		"achievements": [
 			{
-				"Collaborative CMS Integration": "Partnered with backend engineers to bridge the data flow between the admin panel and the frontend. This streamlined the update process for news and media, significantly reducing communication overhead and preventing errors caused by manual code changes."
+				"Collaborative CMS Integration": "Collaborated with backend teams to automate data flow between the admin panel and frontend, streamlining copy updates and eliminating manual deployment risks."
 			},
 			{
-				"Architectural Evolution": "Evolved the legacy interface into a comprehensive SPA to support expanded site content. By implementing client-side routing, the system now performs dynamic data fetching and partial updates, eliminating full-page reloads and significantly enhancing the browsing experience."
+				"Architectural Evolution": "Evolved the legacy interface into a comprehensive React SPA to support expanded site content. By implementing client-side routing, the system now performs dynamic data fetching and partial updates, eliminating full-page reloads and significantly enhancing the browsing experience."
 			},
 			{
 				"SEO optimization architecture": "Server-side rendering is implemented through Vike to ensure that static content can be fully indexed by search engines, thereby achieving a balance between advanced animation and powerful SEO performance."
@@ -163,7 +163,7 @@
 				"Operational Agility": "Enabled non-technical stakeholders to manage site updates directly using CMS, leading to faster content turnaround and zero reliance on engineering support for routine updates."
 			},
 			{
-				"Increased Retention": "The revamped UI and optimized loading states contributed to a 72% growth in news click-through rates"
+				"Increased Retention": "The revamped UI and optimized loading states contributed to a 72% growth in click-through rates for the newly launched news section."
 			}
 		],
 		"tech": ["React", "Vite", "Vike"],
