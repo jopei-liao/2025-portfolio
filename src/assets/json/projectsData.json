@@ -8,13 +8,13 @@
 		"role": "Lead Frontend Engineer (Side Project)",
 		"show_pc": "web-lostandfound-pc.png",
 		"show_mo": "",
-		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
+		"overview": "This project is a dedicated landing page for the Instagram account @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
 		"achievements": [
 			{
 				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
 			},
 			{
-				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+				"Automated CI/CD Pipeline": "Established a robust GitHub Actions workflow for continuous integration and deployment, automating code linting, build verification, and seamless hosting deployment upon every main branch push."
 			}
 		],
 		"impact": [
@@ -68,7 +68,7 @@
 		"id": 3,
 		"title": "BMW Premium Selection",
 		"Side_Project": false,
-		"subtitle": "Refactoring legacy workflows into a modular, maintainable Vue SPA.",
+		"subtitle": "Refactoring legacy workflows into a modular, maintainable headless commerce Vue platform.",
 		"banner": "banner-bps.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-bps-pc.png",
@@ -176,7 +176,7 @@
 		"id": 6,
 		"title": "MINI NEXT",
 		"Side_Project": false,
-		"subtitle": "Redesign a high-performance SPA platform integrating payment solutions.",
+		"subtitle": "Redesign a headless commerce high-performance SPA platform integrating payment solutions.",
 		"banner": "banner-mininext.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-mininext-pc.png",
@@ -208,7 +208,7 @@
 		"id": 7,
 		"title": "BMW Online Shop",
 		"Side_Project": false,
-		"subtitle": "Modernizing the premium car-buying journey through a high-performance SPA.",
+		"subtitle": "Modernizing the premium headless commerce car-buying journey through a high-performance SPA.",
 		"banner": "banner-onlineshop.png",
 		"role": "Lead Frontend Engineer",
 		"show_pc": "web-onlineshop-pc.png",
