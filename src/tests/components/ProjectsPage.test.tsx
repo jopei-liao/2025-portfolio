@@ -1,24 +1,24 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
+import { vi } from "vitest";
 
-import viProjectData from "@/tests/mock/projects.json";
 import Projects from "@/pages/Projects";
 import ProjectLightbox from "@/components/ProjectLightbox";
-import { vi } from "vitest";
 
 vi.mock("@/assets/json/projectsData.json", () => {
 	return {
-		default: viProjectData,
+		default: require("../../tests/mock/projects.json"),
 	};
 });
+
 describe("Projects page and Lightbox interaction tests", () => {
 	const renderWithRouter = (initialEntry = "/projects") => {
 		return render(
 			<MemoryRouter initialEntries={[initialEntry]}>
 				<Routes>
 					{/* Simulate your routing structure */}
-					<Route path="/projects" element={<Projects projectsData={viProjectData} />}>
-						<Route path=":id" element={<ProjectLightbox projectsData={viProjectData} />} />
+					<Route path="/projects" element={<Projects />}>
+						<Route path=":id" element={<ProjectLightbox />} />
 					</Route>
 				</Routes>
 			</MemoryRouter>,

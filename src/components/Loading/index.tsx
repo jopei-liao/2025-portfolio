@@ -1,7 +1,9 @@
 import { forwardRef } from "react";
 import "./style.sass";
 
-const Loading = forwardRef((props, ref) => {
+interface LoadingProps {}
+
+const Loading = forwardRef<HTMLDivElement, LoadingProps>((props, ref) => {
 	return (
 		<div className="loading fixed top-0 left-0 w-full h-screen-vh bg-theme-beige z-9999" ref={ref}>
 			<div className="container w-full h-full">
