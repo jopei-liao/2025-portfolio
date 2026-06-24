@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, createContext, useContext } from "react";
 import { CSSTransition } from "react-transition-group";
 import axios from "axios";
 
@@ -11,18 +11,26 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ProjectLightbox from "@/components/ProjectLightbox";
 
+interface LoadingContextType {
+	setIsLoading: (loading: boolean) => void;
+}
+// Create the Context with an initial value of undefined
+export const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
+
+// Custom hook to easily consume the LoadingContext with a safety check
+export const useLoading = () => {
+	const context = useContext(LoadingContext);
+	if (!context) throw new Error("useLoading must be used within a LoadingProvider");
+	return context;
+};
+
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
+
+	// Ref used for the CSSTransition component to avoid findDOMNode deprecation warnings
 	const loadingRef = useRef(null);
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setIsLoading(false);
-		}, 3000);
-		return () => clearTimeout(timer);
-	}, []);
-
-	// vh set
+	// Fix mobile viewport height issues (the "100vh" address bar bug on iOS/Android)
 	useEffect(() => {
 		const setVh = () => {
 			let vh = window.innerHeight * 0.01;
@@ -35,6 +43,7 @@ function App() {
 		};
 	}, []);
 
+	// Send basic visit analytics to Google Sheets only in production mode
 	useEffect(() => {
 		const sheetUrl = import.meta.env.VITE_GOOGLE_SHEET_API_URL;
 		let params = {
@@ -45,26 +54,27 @@ function App() {
 			axios.get(sheetUrl, { params });
 		}
 	}, []);
+
 	return (
 		<>
-			<CSSTransition in={isLoading} timeout={1000} classNames="loading-fade" unmountOnExit nodeRef={loadingRef}>
-				<Loading ref={loadingRef} />
-			</CSSTransition>
-			<BrowserRouter>
-				{/* nav bar*/}
-				{!isLoading && <Nav />}
+			<LoadingContext.Provider value={{ setIsLoading }}>
+				<CSSTransition in={isLoading} timeout={1000} classNames="loading-fade" unmountOnExit nodeRef={loadingRef}>
+					<Loading ref={loadingRef} />
+				</CSSTransition>
+				<BrowserRouter>
+					{/* Render Nav and Footer only after the loading screen finishes */}
+					{!isLoading && <Nav />}
+					{!isLoading && <Footer />}
 
-				{/* footer - 保護文字 */}
-				{!isLoading && <Footer />}
-
-				{/* routes change */}
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/projects" element={<Projects />}>
-						<Route path=":id" element={<ProjectLightbox />} />
-					</Route>
-				</Routes>
-			</BrowserRouter>
+					{/* App Routing Configuration */}
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/projects" element={<Projects />}>
+							<Route path=":slug" element={<ProjectLightbox />} />
+						</Route>
+					</Routes>
+				</BrowserRouter>
+			</LoadingContext.Provider>
 		</>
 	);
 }

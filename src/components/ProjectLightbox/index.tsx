@@ -1,22 +1,28 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { findProjectById } from "@/tests/utils/projectUtils";
+import { findProjectBySlug } from "@/tests/utils/projectUtils";
+import { useQuery } from "@apollo/client/react";
+import { GET_PROJECTS } from "@/graphql/projectQueries";
+import type { QueryData } from "@/tests/utils/projectUtils";
 
-import projectsData from "@/assets/json/projectsData.json";
 import ic_close from "@/assets/images/ic-close.png";
 
 const ProjectLightbox = () => {
 	const navigate = useNavigate();
-	const { id } = useParams(); // get id from url
-	const selectedProject = findProjectById(projectsData, id);
+	const { slug } = useParams<{ slug: string }>();
+
+	// Fetch all projects data using Apollo Client useQuery
+	const { data } = useQuery(GET_PROJECTS);
+	const selectedProject = findProjectBySlug((data as QueryData)?.projects, slug);
+
 	useEffect(() => {
-		// If there is an ID in the URL, but no corresponding project data is found
-		if (id && !selectedProject) {
+		// If there is a slug in the URL, but no corresponding project data is found
+		if (slug && !selectedProject) {
 			navigate("/projects", { replace: true });
 		}
-	}, [id, selectedProject, navigate]);
+	}, [slug, selectedProject, navigate]);
 
-	if (id && !selectedProject) return null;
+	if (slug && !selectedProject) return null;
 
 	return (
 		<>
@@ -32,14 +38,14 @@ const ProjectLightbox = () => {
 						</button>
 					</div>
 					<div className="scroll-box h-full pt-10 md:pt-13 box-border overflow-y-scroll scrollbar-hidden">
-						{selectedProject?.show_pc !== "" && (
+						{selectedProject?.showPc && (
 							<div className="pic mb-8">
-								<img src={`/assets/images/projects/${selectedProject?.show_pc}`} />
+								<img src={`${selectedProject?.showPc.url || null}`} />
 							</div>
 						)}
-						{selectedProject?.show_mo !== "" && (
+						{selectedProject?.showMo && (
 							<div className="pic mb-8">
-								<img src={`/assets/images/projects/${selectedProject?.show_mo}`} />
+								<img src={`${selectedProject?.showMo.url || null}`} />
 							</div>
 						)}
 						<p className="text-sm text-font-black mb-8 pt-2">{selectedProject?.overview}</p>
@@ -88,21 +94,12 @@ const ProjectLightbox = () => {
 							<div className="achievements-box text-font-black mb-6">
 								<h3 className="text-2xl font-bold">Technical Achievements</h3>
 								<ul className="text-sm leading-normal divide-y divide-font-black">
-									{Array.isArray(selectedProject.achievements) ? (
-										selectedProject.achievements.map((item, idx) => {
-											const keys = item ? Object.keys(item) : [];
-											const key = keys[0] || "";
-											const value = key ? item[key] : "";
-											return (
-												<li key={idx} className="flex gap-4 md:gap-2 py-8">
-													<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{key}</p>
-													<p>{value}</p>
-												</li>
-											);
-										})
-									) : (
-										<li>{selectedProject.achievements}</li>
-									)}
+									{selectedProject.achievements.map((item, idx) => (
+										<li key={idx} className="flex gap-4 md:gap-2 py-8">
+											<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{item.title}</p>
+											<p>{item.content}</p>
+										</li>
+									))}
 								</ul>
 							</div>
 						)}
@@ -110,21 +107,12 @@ const ProjectLightbox = () => {
 							<div className="impact-box text-font-blue mb-4">
 								<h3 className="text-2xl font-bold">Impact</h3>
 								<ul className="text-sm leading-normal divide-y divide-font-blue">
-									{Array.isArray(selectedProject?.impact) ? (
-										selectedProject.impact.map((item, idx) => {
-											const keys = item ? Object.keys(item) : [];
-											const key = keys[0] || "";
-											const value = key ? item[key] : "";
-											return (
-												<li key={idx} className="flex gap-4 md:gap-2 py-8">
-													<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{key}</p>
-													<p>{value}</p>
-												</li>
-											);
-										})
-									) : (
-										<li>{selectedProject.impact}</li>
-									)}
+									{selectedProject.impact.map((item, idx) => (
+										<li key={idx} className="flex gap-4 md:gap-2 py-8">
+											<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{item.title}</p>
+											<p>{item.content}</p>
+										</li>
+									))}
 								</ul>
 							</div>
 						)}

@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useLoading } from "@/App";
+import { useEffect } from "react";
 
 import "./style.sass";
 import Scroll from "@/components/Scroll";
@@ -10,6 +12,17 @@ import ic_behance from "@/assets/images/ic-behance.png";
 import ic_email from "@/assets/images/ic-email.png";
 
 const Home = () => {
+	const { setIsLoading } = useLoading();
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+		}, 1800);
+
+		return () => {
+			clearTimeout(timer);
+		};
+	}, [setIsLoading]);
 	return (
 		<div className="home page page-shell">
 			<div className="page-container p-4">
@@ -38,9 +51,11 @@ const Home = () => {
 						<ul className="text-theme-red flex flex-wrap justify-center items-center gap-4 md:w-[80%] m-auto mb-60 md:mb-25">
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">React</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vue</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vuex</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vite</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">JavaScript</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">RESTful API</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">GraphQL</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">HTML5</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3 / SASS</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Tailwind CSS</li>
