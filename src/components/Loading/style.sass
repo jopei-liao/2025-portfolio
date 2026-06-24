@@ -1,13 +1,12 @@
 @use "@/assets/sass/_variable.sass" as *
 @use "@/assets/sass/_mixin.sass" as *
 
-// CSSTransition 淡入淡出（用於 App.tsx 的 loading 外層）
 .loading-fade-enter 
 	opacity: 0
 
 .loading-fade-enter-active 
 	opacity: 1
-	transition: opacity 1000ms ease
+	transition: opacity 0ms ease
 
 .loading-fade-exit 
 	opacity: 1

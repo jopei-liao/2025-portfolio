@@ -1,11 +1,43 @@
 import { useNavigate, Outlet } from "react-router-dom";
+import { useQuery } from "@apollo/client/react";
+import { GET_PROJECTS } from "@/graphql/projectQueries";
+import type { QueryData } from "@/tests/utils/projectUtils";
+import { useLoading } from "@/App";
 
-import projectsData from "@/assets/json/projectsData.json";
 import "./style.sass";
 import ic_arrow from "@/assets/images/ic-arrow.png";
+import { useEffect } from "react";
 
 const Projects = () => {
 	const navigate = useNavigate();
+
+	// Fetch all projects data from Apollo Client
+	const { loading, error, data } = useQuery(GET_PROJECTS);
+
+	// Get the global loading setter from custom context hook
+	const { setIsLoading } = useLoading();
+
+	useEffect(() => {
+		if (loading) {
+			setIsLoading(true);
+			return;
+		}
+
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+		}, 2000);
+
+		return () => {
+			clearTimeout(timer);
+		};
+	}, [loading, setIsLoading]);
+
+	if (error) return <div>載入失敗：{error.message}</div>;
+
+	// Prevent rendering the main content while Apollo is still loading the data
+	if (loading) return null;
+
+	const projectsData = (data as QueryData)?.projects || [];
 
 	return (
 		<div className="projects page page-shell">
@@ -16,15 +48,17 @@ const Projects = () => {
 						{/* project list */}
 						{projectsData.map(project => (
 							<div
-								key={project.id}
+								key={project.slug}
 								className="item relative w-full min-h-[300px] box-border rounded-xl shadow-xl overflow-hidden cursor-pointer md:hover:-translate-y-1 md:hover:duration-150 duration-150 "
-								onClick={() => navigate(`/projects/${project.id}`)}
+								onClick={() => navigate(`/projects/${project.slug}`)}
 							>
-								<div className="banner">
-									<img src={`/assets/images/projects/${project.banner}`} />
-								</div>
-								<div className="txt-box p-5 pb-20 relative">
-									{project.side_project && <h3 className="text-sm text-white px-2.5 py-1 absolute top-0 -translate-y-full right-0 z-1 bg-theme-blue">Side Project</h3>}
+								{project.banner && (
+									<div className="banner">
+										<img src={`${project.banner.url || null}`} alt={`${project.title} Banner`} />
+									</div>
+								)}
+								<div className="txt-box p-5 pb-24 relative">
+									{project.sideProject && <h3 className="text-sm text-white px-2.5 py-1 absolute top-0 -translate-y-full right-0 z-1 bg-theme-blue">Side Project</h3>}
 									<h2 className="text-base text-theme-red font-bold md:text-xl mb-3">{project.title}</h2>
 									<p className="text-sm text-font-black">{project.subtitle}</p>
 								</div>
@@ -46,8 +80,8 @@ const Projects = () => {
 						))}
 					</div>
 				</div>
-				{/* Lightbox：if URL has id */}
-				<Outlet />
+				{/* Lightbox：if URL has slug */}
+				<Outlet context={{ projectsData }} />
 			</div>
 		</div>
 	);
