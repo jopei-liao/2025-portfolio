@@ -82,6 +82,8 @@ The GitHub Actions script for the main site includes a `clean-exclude` configura
 ├── tsconfig.json              # TypeScript compilation configurations
 └── vite.config.ts             # Vite configuration (deployment path, build options)
 
+```
+
 ## 📄 License
 
 This project is licensed under the ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg).
@@ -95,9 +97,3 @@ This project is licensed under the ![License: MIT](https://img.shields.io/badge/
 - GitHub: [jopei-liao](https://github.com/jopei-liao)
 - Email: [jopei.liao@gmaiol.com](jopei.liao@gmaiol.com)
 - Portfolio: [jopei-liao.github.io](https://jopei-liao.github.io/)
-
-```
-
-```
-
-```
