@@ -30,6 +30,7 @@ jobs:
                   npm run build
               env:
                   VITE_GOOGLE_SHEET_API_URL: ${{ secrets.VITE_GOOGLE_SHEET_API_URL }}
+                  VITE_GRAPHQL_URI: ${{ secrets.VITE_GRAPHQL_URI }}
 
             - name: Deploy to external repository (jopei-liao.github.io)
               uses: JamesIves/github-pages-deploy-action@v4
