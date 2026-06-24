@@ -22,6 +22,11 @@ jobs:
             - name: Install dependencies and build
               run: |
                   npm install
+
+                  npm run typecheck
+
+                  npx vitest run
+
                   npm run build
               env:
                   VITE_GOOGLE_SHEET_API_URL: ${{ secrets.VITE_GOOGLE_SHEET_API_URL }}

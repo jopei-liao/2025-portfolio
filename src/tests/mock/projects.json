@@ -1,27 +1,35 @@
 [
 	{
-		"id": 1,
+		"id": "1",
+		"customId": 1,
 		"title": "project A",
-		"side_project": true,
+		"slug": "project-A",
+		"sideProject": true,
 		"subtitle": "project A subtitle",
-		"banner": "banner-lostandfound.png",
+		"banner": null,
 		"role": "Lead Frontend Engineer (Side Project)",
-		"show_pc": "web-lostandfound-pc.png",
-		"show_mo": "",
+		"showPc": {
+			"url": "web-lostandfound-pc.png"
+		},
+		"showMo": {
+			"url": ""
+		},
 		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
 		"achievements": [
 			{
-				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
+				"title": "Cloud-Driven Content Pipeline",
+				"content": "完成了雲端管線建置"
 			},
 			{
-				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+				"title": "Optimized Asset Delivery",
+				"content": "優化了資源傳輸"
 			}
 		],
 		"impact": [
 			{
-				"Zero-Code Maintenance": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
-			},
-			{ "Streamlined Workflow": "Reduced the time-to-publish for new content from a manual development task to a near-instant cloud sync process." }
+				"title": "Zero-Code Maintenance",
+				"content": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
+			}
 		],
 		"tech": ["React", "Vite"],
 		"links": {
@@ -30,28 +38,36 @@
 		}
 	},
 	{
-		"id": 2,
+		"id": "2",
+		"customId": 2,
 		"title": "project B",
-		"side_project": true,
+		"slug": "project-B",
+		"sideProject": true,
 		"subtitle": "project B subtitle",
-		"banner": "banner-lostandfound.png",
+		"banner": {
+			"url": "banner-lostandfound.png"
+		},
 		"role": "Lead Frontend Engineer (Side Project)",
-		"show_pc": "web-lostandfound-pc.png",
-		"show_mo": "",
+		"showPc": null,
+		"showMo": {
+			"url": ""
+		},
 		"overview": "This project is a dedicated landing page for the Instagram community @somethinglostonroad, which collects humorous photos of lost things submitted by everyone. I developed a dynamic gallery that synchronizes directly with Google Drive API providing a seamless bridge between user submissions and web presentation.",
 		"achievements": [
 			{
-				"Cloud-Driven Content Pipeline": "Integrated the Google Drive API to fetch and render images dynamically. By using the cloud that I enabled instant content updates without the need for code rebuild or manual asset management within the repository."
+				"title": "Cloud-Driven Content Pipeline",
+				"content": "完成了雲端管線建置"
 			},
 			{
-				"Optimized Asset Delivery": "Implemented automated fetching logic to ensure the page remains synchronized with the latest community submissions, significantly reducing the operational overhead for site maintenance."
+				"title": "Optimized Asset Delivery",
+				"content": "優化了資源傳輸"
 			}
 		],
 		"impact": [
 			{
-				"Zero-Code Maintenance": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
-			},
-			{ "Streamlined Workflow": "Reduced the time-to-publish for new content from a manual development task to a near-instant cloud sync process." }
+				"title": "Zero-Code Maintenance",
+				"content": "Successfully eliminated the need for technical intervention during content updates, allowing the community curator to manage the gallery by simply uploading files to a folder."
+			}
 		],
 		"tech": ["React", "Vite"],
 		"links": {
