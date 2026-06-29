@@ -54,14 +54,17 @@ const Home = () => {
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vuex</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vite</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">JavaScript</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">TypeScript</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">RESTful API</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">GraphQL</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">HTML5</li>
-							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3 / SASS</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CSS3</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">SASS</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Tailwind CSS</li>
-							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Unit Testing</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Vitest</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">React Testing Library</li>
 							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">CI/CD</li>
-							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git</li>
+							<li className="stack-item border rounded-4xl py-2.5 md:py-1.5 px-4 md:px-3">Git/GitHub</li>
 						</ul>
 						<h2 className="text-theme-brown  text-2xl mb-18 text-center">My Projects</h2>
 						<p className="text-theme-red mb-60 md:mb-25 leading-normal text-center">
