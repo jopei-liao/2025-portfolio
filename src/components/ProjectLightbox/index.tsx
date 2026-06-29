@@ -90,25 +90,12 @@ const ProjectLightbox = () => {
 								</div>
 							</div>
 						</div>
-						{selectedProject?.achievements && (
+						{selectedProject?.achievements && selectedProject.achievements.length > 0 && (
 							<div className="achievements-box text-font-black mb-6">
-								<h3 className="text-2xl font-bold">Technical Achievements</h3>
+								<h3 className="text-2xl font-bold">Achievements</h3>
 								<ul className="text-sm leading-normal divide-y divide-font-black">
 									{selectedProject.achievements.map((item, idx) => (
-										<li key={idx} className="flex gap-4 md:gap-2 py-8">
-											<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{item.title}</p>
-											<p>{item.content}</p>
-										</li>
-									))}
-								</ul>
-							</div>
-						)}
-						{selectedProject?.impact && (
-							<div className="impact-box text-font-blue mb-4">
-								<h3 className="text-2xl font-bold">Impact</h3>
-								<ul className="text-sm leading-normal divide-y divide-font-blue">
-									{selectedProject.impact.map((item, idx) => (
-										<li key={idx} className="flex gap-4 md:gap-2 py-8">
+										<li key={idx} className="flex gap-4 md:gap-2 py-5">
 											<p className="w-[40%] md:w-[30%] shrink-0 font-bold">{item.title}</p>
 											<p>{item.content}</p>
 										</li>
